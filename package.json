@@ -8,6 +8,7 @@
     "url": "https://github.com/JoaoSouMoreira/weather-forecast"
   },
   "scripts": {
+    "build": "webpack --config ./webpack.config.production.js --progress --colors",
     "dev": "webpack-dev-server --progress --colors --hot --devtool eval --content-base ./"
   },
   "devDependencies": {

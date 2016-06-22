@@ -1,15 +1,20 @@
 var webpack = require('webpack');
 var path = require('path');
 
+var nodeModulesPath = path.resolve(__dirname, 'node_modules');
+var srcPath = path.resolve(__dirname, 'src');
+var distPath = path.resolve(__dirname, 'dist');
+
 module.exports = {
   entry: './src/app.js',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/dist/'
+    publicPath: '/public/'
   },
   devtool: 'source-map',
   plugins: [
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
@@ -17,6 +22,7 @@ module.exports = {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
       compress: {
         warnings: false
       }
