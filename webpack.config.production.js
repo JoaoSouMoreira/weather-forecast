@@ -33,8 +33,7 @@ module.exports = {
       loaders: [
           {
             test: /\.less$/,
-            loader: 'style-loader!css-loader!less-loader',
-            include: path.join(__dirname, 'css')
+            loader: 'style-loader!css-loader!less-loader'
           },
           {
             test: /\.css$/,

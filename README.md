@@ -79,3 +79,4 @@ There are a lot of improvements that could be done in the app, namely:
 * Introduce more cities, or even base cities off of a country pick list first
 * Needs some further evaluation on what data would be best used in a component's state or moved into an independent store
 * Add some customization such as different themes. Maybe using [Bootswatch](https://bootswatch.com/)
+* Fix Less files resolving issues when deploying to Heroku
