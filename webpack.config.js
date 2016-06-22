@@ -46,10 +46,7 @@ module.exports = {
     ],
     resolve: {
       moduleDirectories: ['node_modules'],
-      root: path.resolve(__dirname),
-      alias: {
-        css : 'css'
-      },
+      root: [path.join(__dirname, './src'), path.join(__dirname, './css')],
       extensions: ['', '.js', '.less']
     }
 };

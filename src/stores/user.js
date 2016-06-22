@@ -1,5 +1,5 @@
-import alt from '../alt';
-import UserActions from '../actions/user.js';
+import alt from 'alt';
+import UserActions from 'actions/user.js';
 
 class UserStore {
   constructor() {

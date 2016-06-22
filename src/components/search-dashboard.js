@@ -1,14 +1,14 @@
 import React from 'react';
 import VirtualizedSelect from 'react-virtualized-select';
 import { Button } from 'react-bootstrap';
-import CitiesActions from '../actions/cities.js';
+import CitiesActions from 'actions/cities.js';
 
 import cityList from '../../resources/city.list.us.json';
 
 import 'react-virtualized/styles.css';
 import 'react-select/dist/react-select.css';
 import 'react-virtualized-select/styles.css';
-import 'css/search-dashboard.less';
+import 'search-dashboard.less';
 
 class SearchDashboard extends React.Component {
 

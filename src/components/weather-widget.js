@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { convertTemperature } from '../utils/weather.js';
+import { convertTemperature } from 'utils/weather.js';
 
 class WeatherWidget extends React.Component {
 

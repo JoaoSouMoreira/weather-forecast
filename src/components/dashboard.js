@@ -1,11 +1,11 @@
 import React from 'react';SearchDashboard
 
-import ForecastNavbar from './navbar.js';
-import SearchDashboard from './search-dashboard.js';
-import ForecastDashboard from './forecast-dashboard.js';
-import Footer from './footer.js';
+import ForecastNavbar from 'components/navbar.js';
+import SearchDashboard from 'components/search-dashboard.js';
+import ForecastDashboard from 'components/forecast-dashboard.js';
+import Footer from 'components/footer.js';
 
-import 'css/bootstrap.less';
+import 'bootstrap.less';
 
 class Dashboard extends React.Component {
 

@@ -1,6 +1,6 @@
-import alt from '../alt';
-import CitiesActions from '../actions/cities.js';
-import CitiesSource from '../sources/cities.js';
+import alt from 'alt';
+import CitiesActions from 'actions/cities.js';
+import CitiesSource from 'sources/cities.js';
 
 class CitiesStore {
   constructor() {

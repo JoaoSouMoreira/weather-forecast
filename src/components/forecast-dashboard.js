@@ -1,12 +1,12 @@
 import React from 'react';
 import connectToStores from 'alt-utils/lib/connectToStores';
-import CitiesStore from '../stores/cities.js';
-import UserStore from '../stores/user.js';
-import WeatherWidget from './weather-widget.js';
-import { convertTemperature } from '../utils/weather.js';
+import CitiesStore from 'stores/cities.js';
+import UserStore from 'stores/user.js';
+import WeatherWidget from 'components/weather-widget.js';
+import { convertTemperature } from 'utils/weather.js';
 
-import 'css/loader.less';
-import 'css/forecast-dashboard.less';
+import 'loader.less';
+import 'forecast-dashboard.less';
 
 class ForecastDashboard extends React.Component {
 

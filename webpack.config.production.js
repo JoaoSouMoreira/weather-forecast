@@ -33,12 +33,12 @@ module.exports = {
       loaders: [
           {
             test: /\.less$/,
-            loader: 'style!css!less',
+            loader: 'style-loader!css-loader!less-loader',
             include: path.join(__dirname, 'css')
           },
           {
             test: /\.css$/,
-            loader: 'style!css'
+            loader: 'style-loader!css-loader'
           },
           {
             test: /\.json$/,
@@ -58,10 +58,7 @@ module.exports = {
   },
   resolve: {
     moduleDirectories: ['node_modules'],
-    root: path.resolve(__dirname),
-    alias: {
-      css : 'css'
-    },
+    root: [path.join(__dirname, './src'), path.join(__dirname, './css')],
     extensions: ['', '.js', '.less']
   }
 };

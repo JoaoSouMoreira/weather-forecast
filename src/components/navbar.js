@@ -1,10 +1,10 @@
 import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
 import connectToStores from 'alt-utils/lib/connectToStores';
-import CitiesActions from '../actions/cities.js'
-import CitiesStore from '../stores/cities.js';
+import CitiesActions from 'actions/cities.js'
+import CitiesStore from 'stores/cities.js';
 
-import 'css/forecast-navbar.less';
+import 'forecast-navbar.less';
 
 class ForecastNavbar extends React.Component {
 
