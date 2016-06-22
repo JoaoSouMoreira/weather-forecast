@@ -14,6 +14,7 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
+    new webpack.NoErrorsPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
@@ -55,11 +56,6 @@ module.exports = {
       ]
   },
   resolve: {
-    extensions: [
-        '',
-        '.js',
-        '.html',
-        '.css', '.less'
-    ]
+    moduleDirectories: ['node_modules']
   }
 };
