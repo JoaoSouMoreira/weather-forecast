@@ -5,7 +5,7 @@ import SearchDashboard from './search-dashboard.js';
 import ForecastDashboard from './forecast-dashboard.js';
 import Footer from './footer.js';
 
-import '../../css/bootstrap.css';
+import '../../css/bootstrap.less';
 
 class Dashboard extends React.Component {
 
