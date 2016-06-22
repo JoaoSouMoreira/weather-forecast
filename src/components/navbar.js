@@ -4,7 +4,7 @@ import connectToStores from 'alt-utils/lib/connectToStores';
 import CitiesActions from '../actions/cities.js'
 import CitiesStore from '../stores/cities.js';
 
-import '../../css/forecast-navbar.less';
+import 'css/forecast-navbar.less';
 
 class ForecastNavbar extends React.Component {
 

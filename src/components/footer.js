@@ -3,7 +3,7 @@ import connectToStores from 'alt-utils/lib/connectToStores';
 import UserActions from '../actions/user.js'
 import UserStore from '../stores/user.js';
 
-import '../../css/footer.less';
+import 'css/footer.less';
 
 class Footer extends React.Component {
 
