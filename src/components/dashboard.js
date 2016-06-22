@@ -1,4 +1,4 @@
-import React from 'react';SearchDashboard
+import React from 'react';
 
 import ForecastNavbar from 'components/navbar.js';
 import SearchDashboard from 'components/search-dashboard.js';

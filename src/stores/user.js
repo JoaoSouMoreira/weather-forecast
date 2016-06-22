@@ -1,4 +1,4 @@
-import alt from 'alt';
+import alt from '../alt-singleton.js';
 import UserActions from 'actions/user.js';
 
 class UserStore {

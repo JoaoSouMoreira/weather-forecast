@@ -15,7 +15,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "alt": "^0.18.4",
+    "alt": "^0.17.0",
     "alt-utils": "^1.0.0",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",

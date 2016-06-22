@@ -1,4 +1,4 @@
-import alt from 'alt';
+import alt from '../alt-singleton.js';
 import CitiesActions from 'actions/cities.js';
 import CitiesSource from 'sources/cities.js';
 
