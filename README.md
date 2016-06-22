@@ -1,6 +1,6 @@
 # Weather Forecast
 
-This project is my submission to the technical test for BuiltIt.
+This project is my submission to the technical test for BuildIt.
 
 It is a weather forecast app that allows users to search for a city in the US and get the 5 day weather forecast.
 
