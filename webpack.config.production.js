@@ -55,12 +55,12 @@ module.exports = {
       ]
   },
   resolve: {
-        root: [ resolveNodePath(''), resolveModulePath('')],
-        modulesDirectories: [resolveNodePath(''), resolveModulePath('')],
-        extensions: [
-            '',
-            '.js',
-            '.html',
-            '.css', '.styl', '.less'
-        ]
-};
+    root: [ resolveNodePath(''), resolveModulePath('')],
+    modulesDirectories: [resolveNodePath(''), resolveModulePath('')],
+    extensions: [
+        '',
+        '.js',
+        '.html',
+        '.css', '.styl', '.less'
+    ]
+}
