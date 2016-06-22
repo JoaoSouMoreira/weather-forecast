@@ -34,7 +34,7 @@ module.exports = {
           {
             test: /\.less$/,
             loader: 'style!css!less',
-            include: path.join(__dirname, 'css');
+            include: path.join(__dirname, 'css')
           },
           {
             test: /\.json$/,
