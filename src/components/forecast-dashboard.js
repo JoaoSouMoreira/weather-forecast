@@ -22,15 +22,27 @@ class ForecastDashboard extends React.Component {
     super(props);
 
     this.state = { openCity: null };
+
+    this.getCityFromStore = this.getCityFromStore.bind(this);
+  }
+
+  componentWillMount() {
+    if (this.props.cities.openCities && this.props.cities.openCities.length > 0) {
+      this.getCityFromStore(this.props.cities.openCities, this.props.view);
+    }
   }
 
   componentWillUpdate(nextProps, nextState) {
-    if (this.props.cities.isLoading !== nextProps.cities.isLoading) {
-      const openCity = nextProps.cities.openCities.find((city) => city.city.name === this.props.view);
+    if (this.props.cities.isLoading !== nextProps.cities.isLoading || this.props.view !== nextProps.view) {
+      this.getCityFromStore(nextProps.cities.openCities, nextProps.view);
+    }
+  }
 
-      if (openCity) {
-        this.setState({ openCity: openCity });
-      }
+  getCityFromStore(cities, view) {
+    const openCity = cities.find((city) => city.city.name === view);
+
+    if (openCity) {
+      this.setState({ openCity: openCity });
     }
   }
 
